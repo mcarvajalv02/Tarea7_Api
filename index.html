@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <script type="module" src="./src/js/script.js" defer></script>
+    <title>Tarea7_Api</title>
+  </head>
+  <body>
+    <h1>Gas Stations</h1>
+
+    <div class="main-container">
+      <section id="filters">
+        <h2>Filter Gas Stations</h2>
+        <form id="filterForm">
+          <label for="province">Province:</label>
+          <select id="province" name="province">
+            <option value="" disabled selected>Select a province</option>
+          </select>
+
+          <label for="municipality">Municipality:</label>
+          <select id="municipality" name="municipality" disabled>
+            <option value="" disabled selected>Select a municipality</option>
+          </select>
+
+          <label for="fuelType">Fuel Type:</label>
+          <select id="fuelType" name="fuelType">
+            <option value="" disabled selected>Select a fuel type</option>
+            <option value="Gasolina 95 E5">Gasolina 95 E5</option>
+            <option value="Gasolina 98 E5">Gasolina 98 E5</option>
+            <option value="Gasoleo A">Gasóleo A</option>
+            <option value="Gasoleo A Premium">Gasóleo A Premium</option>
+          </select>
+
+          <label for="isOpen">
+            Show only open stations
+            <input type="checkbox" id="isOpen" name="isOpen" />
+          </label>
+        </form>
+      </section>
+
+      <section id="results">
+        <h2>Gas Station Results</h2>
+        <div id="stationList"></div>
+      </section>
+    </div>
+  </body>
+</html>

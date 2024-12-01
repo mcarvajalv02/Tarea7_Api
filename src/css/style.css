@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #4CAF50; 
+    --secondary-color: #f8f8f8; 
+    --accent-color: #333; 
+    --black-color: #555; 
+    --white-color: #fff;
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.main-container {
+    display: flex; 
+    justify-content: space-between; 
+    width: 100%;
+    max-width: 1200px; 
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+    width: 100%; 
+}
+
+#filters {
+    background-color: var(--white-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 12px;
+    width: 30%; 
+    position: sticky;
+    top: 20px;
+}
+
+#filters h2 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    color: var(--accent-color);
+}
+
+form label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: bold;
+    color: var(--black-color);
+}
+
+form select, form input[type="checkbox"], form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+    background-color: var(--secondary-color);
+}
+
+form button {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #45a049; 
+}
+
+#results {
+    background-color: var(--white-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 65%; 
+    overflow-y: auto;
+    max-height: 80vh; 
+}
+
+#results h2 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    color: var(--accent-color);
+}
+
+#stationList {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: var(--black-color);
+}
+
+#stationList p {
+    text-align: center;
+    color: #888;
+}
+
+.station {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: var(--white-color);
+}
